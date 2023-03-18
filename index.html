@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yummy</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div
+      class="loaderContainer w-100 d-flex align-items-center justify-content-center"
+    >
+      <span class="loader"></span>
+    </div>
+    <section id="sidebar" class="sideBar d-flex w-25">
+      <div
+        id="sideBarMenu"
+        class="sideBarMenu w-75 bg-black ps-2 position-relative"
+      >
+        <ul id="sidebarLinks" class="pt-2">
+          <li data-link-type="search"><a href="#">Search</a></li>
+          <li data-link-type="c"><a href="#">Categories</a></li>
+          <li data-link-type="a"><a href="#">Area</a></li>
+          <li data-link-type="i"><a href="#">Ingredients</a></li>
+          <li data-link-type="contact">
+            <a class="sidebarSearch" href="#">Contact Us</a>
+          </li>
+        </ul>
+
+        <div class="sideMenuFooter position-absolute bottom-0">
+          <ul class="d-flex flex-row">
+            <li>
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa fa-globe"></i></a>
+            </li>
+          </ul>
+          <span>Copyright Â© 2019 All Rights Reserved.</span>
+        </div>
+      </div>
+      <div
+        class="sideBarToggle bg-white text-black p-3 d-flex flex-column justify-content-between"
+      >
+        <div class="smiley-face">
+          <i class="fa fa-smile fa-2x"> </i>
+        </div>
+        <div class="toggleIcon">
+          <i id="sideBarToggle" class="fa fa-list fa-2x"></i>
+        </div>
+        <div class="sidemenuToggleFooter">
+          <a href=""><i class="fa fa-globe"></i></a>
+          <a href=""><i class="fa fa-share-nodes"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <section class="py-3" id="speciallyForSearch"></section>
+      <div class="py-1 row gy-4" id="linkCards"></div>
+
+      <div class="row" id="gameModal">
+        <!-- The Modal -->
+        <div class="modal fade" id="myModal">
+          <div class="modal-dialog">
+            <div class="modal-content"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.3.min.js"></script>
+
+    <!-- <script src="js/index.js"></script> -->
+    <script src="js/ui.module.js" type="module"></script>
+  </body>
+</html>
